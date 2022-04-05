@@ -20,7 +20,7 @@ const bootstrapUser = async () => {
 };
 
 const AuthContext = React.createContext<
-  | {
+   {
       user: User | null;
       register: (form: AuthForm) => Promise<void>;
       login: (form: AuthForm) => Promise<void>;
