@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Route, Routes, useLocation } from "react-router";
+import { Navigate, Route, Routes, useLocation } from "react-router";
 import { KanbanScreen } from "screens/kanban";
 import { EpicScreen } from "screens/epic";
 import styled from "@emotion/styled";
 import { Menu } from "antd";
+
 const useRouteType = () => {
   const units = useLocation().pathname.split("/");
   return units[units.length - 1];
